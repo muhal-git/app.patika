@@ -6,7 +6,7 @@ public class taxiMeter {
         System.out.print("Enter distance(KM): ");
         distance = input.nextDouble();
         price = distance * 2.20;
-        System.out.println("Amount of the trip: "+ (price<20 ? 20 : price));
+        System.out.println("Amount of the trip: "+ (price<20 ? 20 : String.format("%.2f",price)));
 
     }
 }
