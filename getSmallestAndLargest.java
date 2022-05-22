@@ -9,36 +9,19 @@ public class Solution {
         // 'smallest' must be the lexicographically smallest substring of length 'k'
         // 'largest' must be the lexicographically largest substring of length 'k'
         
-        int first = 0;
-        int last = 0;
         
-        for (int i = 0; i < s.length()-k+1; i++) {
-            int pivot = s.charAt(i);
-            if ( pivot <= s.charAt(first) ) {
-                first = i;
+        
+        smallest = s.substring(0,k);
+        largest  = s.substring(0,k);;
+        
+        for(int i=0;i<s.length()-k+1;i++){
+            if(s.substring(i,i+k).compareTo(smallest) <0){
+                smallest = s.substring(i,i+k);
             }
-            if ( pivot > s.charAt(last) ) {
-                last = i;
-            }
-             
-           // System.out.println("ASCII vale of "+s.charAt(i)+": "+pivot);
-        }
-        /*
-        System.out.println("First: "+first+". char: "+s.charAt(first));
-        
-        System.out.println("Last: "+last+". char: "+s.charAt(last));
-        */
-        int dummy=k;
-        while (dummy-->0) {
-            smallest += s.charAt(first++);
-            //System.out.println(smallest);
+            if(s.substring(i,i+k).compareTo(largest) >0){
+                largest = s.substring(i,i+k);
+            } 
         }    
-        dummy=k;
-        while (dummy-->0) {
-            largest += s.charAt(last++);
-            //System.out.println(largest);
-        }    
-        
     
         
         return smallest + "\n" + largest;
