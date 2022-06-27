@@ -98,3 +98,5 @@ for i in range(15):
   time_interval_2 = time_2 - time_1
   FARK = time_interval_2 - time_interval_1
   print("\nZAMAN FARKI: ",FARK,"    --    ",time_interval_2)
+
+  ### final
