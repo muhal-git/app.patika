@@ -37,7 +37,7 @@ def print_time(threadName, delay, counter):
 threadLock = threading.Lock()
 threads = []
 
-
+counter = 0
 for i in range(1):
   for i in range(1):
       try:
@@ -49,8 +49,7 @@ for i in range(1):
           print("BİTTİ: ")
           time_2 = time.time()
           time_interval_2 = time_2 - time_1
-          FARK = time_interval_2 - time_interval_1
-          print("\nZAMAN FARKI: ",FARK,"    --    ",time_interval_2)
+          print("\nZAMAN: ",time_interval_2)
 
           
       except:
