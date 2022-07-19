@@ -46,7 +46,11 @@ public class Array {
         weekendDays[0] = "Cumartesi";
         System.out.println(weekendDays[0]);
 
-        // String colors[]; --error--> java: variable colors might not have been initialized
+        /* String colors[]; --error--> java: variable colors might not have been initialized
+        
+        String colors[]; gibi tanımlamadan sonra colors = new String[4]; şeklinde boyutu tanımlamak gerekir
+        
+        */
         String  colors[] = new String[10];
         colors[0] = "Black";
     }
