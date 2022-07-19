@@ -36,5 +36,12 @@ public class Array {
         printArray(list2);
         list2 = reverseArray(list2);
         printArray(list2);
+
+
+        String[] weekdays = {"Monday","Tuesday","Wednesday"};
+        String[] weekendDays = new String[]{"Saturday","Sunday"};
+
+        System.out.println(weekdays[0]);
+        System.out.println(weekendDays[0]);
     }
 }
