@@ -45,5 +45,9 @@ public class Array {
         System.out.println(weekendDays[0]);
         weekendDays[0] = "Cumartesi";
         System.out.println(weekendDays[0]);
+
+        // String colors[] --error--> java: variable colors might not have been initialized
+        String  colors[] = new String[10];
+        colors[0] = "Black";
     }
 }
