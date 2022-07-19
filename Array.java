@@ -43,5 +43,7 @@ public class Array {
 
         System.out.println(weekdays[0]);
         System.out.println(weekendDays[0]);
+        weekendDays[0] = "Cumartesi";
+        System.out.println(weekendDays[0]);
     }
 }
