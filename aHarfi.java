@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class aHarfi {
+public class Array {
 
 
     public static  void main(String[] args){
@@ -18,6 +18,10 @@ public class aHarfi {
                 }
             }
         }
+
+        letter[0][3] = "";
+        letter[3][3] = "";
+        letter[6][3] = "";
 
         for (String[] row : letter){
             for (String col : row){
