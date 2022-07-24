@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class bHarfi {
+public class aHarfi {
 
 
     public static  void main(String[] args){
