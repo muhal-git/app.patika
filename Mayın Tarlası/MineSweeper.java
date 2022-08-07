@@ -124,12 +124,12 @@ public class MineSweeper {
             }
         }
 
-
+	/*
         System.out.println("==============MAYINLAR==============");
         System.out.println(Arrays.toString(mayinSatir));
         System.out.println(Arrays.toString(mayinSutun));
         System.out.println("==============MAYINLAR==============");
-
+	*/
 
 
         for (int i = 0; i < mayinSatir.length; i++) {
